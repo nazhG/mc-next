@@ -40,11 +40,12 @@ export default function Home() {
           </button>
         </form>
         <ul>
-          {nombres.map(nombre => (
+          {nombres.error ? (<span className="italic text-gray-400">Nothing here yet!</span>) : 
+          (nombres.map(nombre => (
             <li key={nombre.id} className="border-b p-2">
               {nombre.nombre}
             </li>
-          ))}
+          )))}
         </ul>
       </main>
     </>
