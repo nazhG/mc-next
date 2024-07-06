@@ -2,7 +2,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "postinstall": "prisma generate",
     "build": "next build",
     "dev": "next dev",
     "start": "next start"
